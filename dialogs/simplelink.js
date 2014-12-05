@@ -31,7 +31,6 @@
         				href = "http://" + href;
         			}
 	            element.setAttribute("href", href);
-	            debugger;
 	            if(!element.getText()) {
         				element.setText(this.getValue());
         			}
@@ -45,7 +44,6 @@
             this.setValue( element.getText() );
         },
         commit: function(element) {
-        	debugger;
         	var currentValue = this.getValue();
         	if(currentValue !== "" && currentValue !== null) {
 	        	element.setText(currentValue);
